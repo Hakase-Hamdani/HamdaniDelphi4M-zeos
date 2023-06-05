@@ -28,6 +28,8 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -40,5 +42,25 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+Edit1.Clear;
+Edit2.Clear;
+Edit3.Clear;
+Edit4.Clear;
+Edit5.Clear;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add(‘Update customer set nama_customer =‘Rahman, S.KOM’ where id= 1');
+ZQuery1.ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from kustomer');
+ZQuery1.Open;
+end;
 
 end.

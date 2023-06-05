@@ -1,8 +1,8 @@
 object Form1: TForm1
-  Left = 309
-  Top = 192
-  Width = 928
-  Height = 522
+  Left = 283
+  Top = 173
+  Width = 827
+  Height = 525
   Caption = 'Form1'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -51,7 +51,7 @@ object Form1: TForm1
   object DBGrid1: TDBGrid
     Left = 16
     Top = 216
-    Width = 881
+    Width = 769
     Height = 209
     DataSource = DataSource1
     TabOrder = 0
@@ -60,6 +60,42 @@ object Form1: TForm1
     TitleFont.Height = -11
     TitleFont.Name = 'Tahoma'
     TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'idkostumer'
+        Width = 32
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nmkostumer'
+        Width = 90
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'telp'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'alamat'
+        Width = 170
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'kota'
+        Width = 170
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'kodepos'
+        Width = 170
+        Visible = True
+      end>
   end
   object Edit1: TEdit
     Left = 192
@@ -102,43 +138,45 @@ object Form1: TForm1
     Text = 'Edit5'
   end
   object Button1: TButton
-    Left = 40
+    Left = 200
     Top = 168
     Width = 75
     Height = 25
-    Caption = 'Button1'
+    Caption = 'Baru'
     TabOrder = 6
+    OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 136
+    Left = 296
     Top = 168
     Width = 75
     Height = 25
-    Caption = 'Button2'
+    Caption = 'Simpan'
     TabOrder = 7
+    OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 232
+    Left = 392
     Top = 168
     Width = 75
     Height = 25
-    Caption = 'Button3'
+    Caption = 'Edit'
     TabOrder = 8
   end
   object Button4: TButton
-    Left = 328
+    Left = 488
     Top = 168
     Width = 75
     Height = 25
-    Caption = 'Button4'
+    Caption = 'Hapus'
     TabOrder = 9
   end
   object Button5: TButton
-    Left = 424
+    Left = 584
     Top = 168
     Width = 75
     Height = 25
-    Caption = 'Button5'
+    Caption = 'Batal'
     TabOrder = 10
   end
   object ZConnection1: TZConnection
@@ -154,8 +192,8 @@ object Form1: TForm1
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Tugas Harian\zeo' +
       's_visual\libmysql.dll'
-    Left = 216
-    Top = 440
+    Left = 144
+    Top = 152
   end
   object ZQuery1: TZQuery
     Connection = ZConnection1
@@ -163,12 +201,12 @@ object Form1: TForm1
     SQL.Strings = (
       'select * from kostumer')
     Params = <>
-    Left = 160
-    Top = 440
+    Left = 88
+    Top = 152
   end
   object DataSource1: TDataSource
     DataSet = ZQuery1
-    Left = 104
-    Top = 440
+    Left = 32
+    Top = 152
   end
 end
