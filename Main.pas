@@ -30,6 +30,9 @@ type
     Button5: TButton;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,6 +64,37 @@ ZQuery1.ExecSQL;
 ZQuery1.SQL.Clear;
 ZQuery1.SQL.Add('select * from kustomer');
 ZQuery1.Open;
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add(‘Update customer set nama_customer =‘Rahman, S.KOM’ where id= 1');
+ZQuery1. ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from kustomer');
+ZQuery1.Open;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('delete from kustomer where idkustomer= 3');
+ZQuery1. ExecSQL;
+
+ZQuery1.SQL.Clear;
+ZQuery1.SQL.Add('select * from kustomer');
+ZQuery1.Open;
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+Edit1.Clear;
+Edit2.Clear;
+Edit3.Clear;
+Edit4.Clear;
+Edit5.Clear;
 end;
 
 end.

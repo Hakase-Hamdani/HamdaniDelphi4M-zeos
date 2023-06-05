@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 283
-  Top = 173
+  Left = 122
+  Top = 179
   Width = 827
   Height = 525
   Caption = 'Form1'
@@ -162,6 +162,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'Edit'
     TabOrder = 8
+    OnClick = Button3Click
   end
   object Button4: TButton
     Left = 488
@@ -170,6 +171,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'Hapus'
     TabOrder = 9
+    OnClick = Button4Click
   end
   object Button5: TButton
     Left = 584
@@ -178,6 +180,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'Batal'
     TabOrder = 10
+    OnClick = Button5Click
   end
   object ZConnection1: TZConnection
     ControlsCodePage = cGET_ACP
