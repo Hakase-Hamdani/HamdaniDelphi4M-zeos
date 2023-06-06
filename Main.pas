@@ -58,7 +58,7 @@ end;
 procedure TForm1.Button2Click(Sender: TObject);
 begin
 ZQuery1.SQL.Clear;
-ZQuery1.SQL.Add(‘Update customer set nama_customer =‘Rahman, S.KOM’ where id= 1');
+ZQuery1.SQL.Add('Update customer set nama_customer =‘Rahman, S.KOM’ where id= 1');
 ZQuery1.ExecSQL;
 
 ZQuery1.SQL.Clear;
@@ -69,7 +69,7 @@ end;
 procedure TForm1.Button3Click(Sender: TObject);
 begin
 ZQuery1.SQL.Clear;
-ZQuery1.SQL.Add(‘Update customer set nama_customer =‘Rahman, S.KOM’ where id= 1');
+ZQuery1.SQL.Add('Update customer set nama_customer =‘Rahman, S.KOM’ where id= 1');
 ZQuery1. ExecSQL;
 
 ZQuery1.SQL.Clear;
